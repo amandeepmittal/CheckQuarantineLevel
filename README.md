@@ -9,9 +9,9 @@
 
 [![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/)
 
-This is **fun** a app built for [Jscrambler](https://blog.jscrambler.com/) tutorial during the time of pandemic. The objective to include:
+This is **fun** a app built for [Jscrambler](https://blog.jscrambler.com/) tutorial during the time of pandemic. The objective includes:
 
-- [Expo](https://expo.io) SDK `37.x.x`.
+- use [Expo](https://expo.io) SDK `37.x.x`.
 - How to use [Expo font hook](https://github.com/byCedric/use-expo/blob/master/packages/font/docs/use-fonts.md) from [Cedric van Putten's](https://github.com/byCedric) collection of `use-expo` [hooks](https://github.com/byCedric/use-expo).
 - How to use [date time picker modal](https://github.com/mmazzarolo/react-native-modal-datetime-picker) to select a date.
 - Use [momentjs](https://momentjs.com/) to convert the data input provided by the user and calculate the difference between the current date.
