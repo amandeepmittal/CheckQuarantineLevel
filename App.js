@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: 'Press-Start2p',
     fontSize: 24,
-    marginTop: 100,
+    marginTop: 60,
     paddingHorizontal: 20,
     lineHeight: 30
   },
@@ -251,7 +251,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Press-Start2p',
     alignSelf: 'center',
     position: 'absolute',
-    bottom: 40,
+    bottom: 20,
     padding: 5
   }
 });
