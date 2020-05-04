@@ -20,6 +20,12 @@ This is **fun** a app built for [Jscrambler](https://blog.jscrambler.com/) tutor
 
 ![js16](https://i.imgur.com/kkHgQ93.png)
 
+![ss1](https://i.imgur.com/WkVj3bB.png)
+
+![ss2](https://i.imgur.com/xYGUnVQ.png)
+
+![ss3](https://i.imgur.com/NHotzlu.png)
+
 ![js17](https://i.imgur.com/gJvFbdp.gif)
 
 Yes, this app is completely build using Expo and its modules (_What a great way to build mobile apps!_)
