@@ -4,7 +4,8 @@ import {
   Text,
   StyleSheet,
   Dimensions,
-  TouchableWithoutFeedback
+  TouchableWithoutFeedback,
+  ScrollView
 } from 'react-native';
 import { useFonts } from '@use-expo/font';
 import { AppLoading } from 'expo';
@@ -113,41 +114,45 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{`Are you DaVinci of Isolation?`}</Text>
-      <TouchableWithoutFeedback onPress={showDatePicker}>
-        <View style={styles.pickerContainer}>
-          <Fontisto style={styles.icon} name="calendar" size={48} />
-          <Text style={styles.pickerText}>{`Tap here to\nselect a date`}</Text>
-        </View>
-      </TouchableWithoutFeedback>
-      <DateTimePickerModal
-        isVisible={isDatePickerVisible}
-        mode="date"
-        onConfirm={handleConfirm}
-        onCancel={hideDatePicker}
-        headerTextIOS="When did you start isolating?"
-      />
-      <View style={styles.showDateContainer}>
-        <Text style={styles.showDateText}>
-          You started isolating on{' '}
-          {pickedDate && (
-            <Text style={styles.showDateText}>
-              {moment(pickedDate).format('YYYY-MM-DD')}.
-            </Text>
-          )}
-        </Text>
-        <TouchableWithoutFeedback onPress={daysRemaining}>
-          <View style={styles.evaluateButtonContainer}>
-            <Text style={styles.evaluateButtonText}>Check your level</Text>
+      <ScrollView
+        contentContainerStyle={{
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        <Text style={styles.title}>{`Are you DaVinci of Isolation?`}</Text>
+        <TouchableWithoutFeedback onPress={showDatePicker}>
+          <View style={styles.pickerContainer}>
+            <Fontisto style={styles.icon} name="calendar" size={48} />
+            <Text
+              style={styles.pickerText}
+            >{`Tap here to\nselect a date`}</Text>
           </View>
         </TouchableWithoutFeedback>
-      </View>
-      <View style={styles.resultContainer}>{renderAchievements()}</View>
-      <Text style={styles.footerText}>
-        Built with{' '}
-        <MaterialCommunityIcons name="heart-circle" color="#000" size={30} /> by
-        JScrambler & @amanhimself
-      </Text>
+        <DateTimePickerModal
+          isVisible={isDatePickerVisible}
+          mode="date"
+          onConfirm={handleConfirm}
+          onCancel={hideDatePicker}
+          headerTextIOS="When did you start isolating?"
+        />
+        <View style={styles.showDateContainer}>
+          <Text style={styles.showDateText}>
+            You started isolating on{' '}
+            {pickedDate && (
+              <Text style={styles.showDateText}>
+                {moment(pickedDate).format('YYYY-MM-DD')}.
+              </Text>
+            )}
+          </Text>
+          <TouchableWithoutFeedback onPress={daysRemaining}>
+            <View style={styles.evaluateButtonContainer}>
+              <Text style={styles.evaluateButtonText}>Check your level</Text>
+            </View>
+          </TouchableWithoutFeedback>
+        </View>
+        <View style={styles.resultContainer}>{renderAchievements()}</View>
+      </ScrollView>
     </View>
   );
 }
@@ -155,13 +160,16 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     backgroundColor: '#ffbd12'
+  },
+  scrollContainer: {
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   title: {
     fontFamily: 'Press-Start2p',
-    fontSize: 24,
-    marginTop: 60,
+    fontSize: 20,
+    marginTop: 50,
     paddingHorizontal: 20,
     lineHeight: 30
   },
