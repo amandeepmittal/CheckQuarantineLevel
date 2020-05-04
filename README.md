@@ -54,5 +54,3 @@ MIT
 ## Built by
 
 - @amanhimself: [Twitter](https://twitter.com/amanhimself) | [React Native Tutorials](https://amanhimself.dev) | [Weekly/bi-weekly newsletter on new posts and tutorials](https://tinyletter.com/amanhimself)
-
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A611K61)
