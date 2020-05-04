@@ -1,26 +1,20 @@
 {
   "expo": {
-    "name": "CheckQuarantineLevel",
-    "slug": "CheckQuarantineLevel",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "name": "DaVinci of Isolation",
+    "slug": "davinciofisolation",
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/houseicon.png",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/customsplash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffbd12"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     }
