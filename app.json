@@ -3,7 +3,7 @@
     "name": "DaVinci of Isolation",
     "slug": "davinciofisolation",
     "platforms": ["ios", "android", "web"],
-    "version": "1.0.1",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/houseicon.png",
     "splash": {
