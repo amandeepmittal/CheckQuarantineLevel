@@ -152,6 +152,11 @@ export default function App() {
           </TouchableWithoutFeedback>
         </View>
         <View style={styles.resultContainer}>{renderAchievements()}</View>
+        <Text style={styles.footerText}>
+          Built with{' '}
+          <MaterialCommunityIcons name="heart-circle" color="#000" size={30} />{' '}
+          by JScrambler & @amanhimself
+        </Text>
       </ScrollView>
     </View>
   );
@@ -258,8 +263,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontFamily: 'Press-Start2p',
     alignSelf: 'center',
-    position: 'absolute',
-    bottom: 20,
-    padding: 5
+    // position: 'absolute',
+    marginTop: 40,
+    padding: 25,
+    lineHeight: 30
   }
 });
