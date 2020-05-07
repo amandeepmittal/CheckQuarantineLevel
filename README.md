@@ -1,4 +1,4 @@
-# DaVinci of Isolation
+# Are You a Quarantine Pro?
 
 <p>
   <!-- iOS -->
@@ -15,6 +15,8 @@ This is **fun** a app built for [Jscrambler](https://blog.jscrambler.com/) tutor
 - How to use [Expo font hook](https://github.com/byCedric/use-expo/blob/master/packages/font/docs/use-fonts.md) from [Cedric van Putten's](https://github.com/byCedric) collection of `use-expo` [hooks](https://github.com/byCedric/use-expo).
 - How to use [date time picker modal](https://github.com/mmazzarolo/react-native-modal-datetime-picker) to select a date.
 - Use [momentjs](https://momentjs.com/) to convert the data input provided by the user and calculate the difference between the current date.
+
+The app is all about how long you have been quarantining. As a user, you input the date when you started isolating and the app is going to display a fun message to tell you how far you have come in the quarantine "game".
 
 ## Screens: What's inside?
 
@@ -57,4 +59,4 @@ MIT
 
 ## Built by
 
-- @amanhimself: [Twitter](https://twitter.com/amanhimself) | [React Native Tutorials](https://amanhimself.dev) | [Weekly/bi-weekly newsletter on new posts and tutorials](https://tinyletter.com/amanhimself)
+- @amanhimself: [Twitter](https://twitter.com/amanhimself) | [React Native Tutorials](https://amanhimself.dev) | [Subscribe the newsletter on new React Native posts and tutorials here](https://tinyletter.com/amanhimself)
