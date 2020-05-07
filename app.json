@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "DaVinci of Isolation",
-    "slug": "davinciofisolation",
+    "name": "Quarantine Pro",
+    "slug": "quarantinepro",
     "platforms": ["ios", "android", "web"],
-    "version": "1.0.2",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/houseicon.png",
     "splash": {
@@ -17,6 +17,7 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "The app is all about how long you have been quarantining. As a user, you input the date when you started isolating and the app is going to display a fun message to tell you how far you have come in the quarantine “game”. This app is built wih the awesome team Jscrambler for a new React Native and Expo blog post. This app uses various Expo modules such fonts (useFonts hook), expo-web-browser and other modules like date-time-picker-modal, momentjs and custom font."
   }
 }
