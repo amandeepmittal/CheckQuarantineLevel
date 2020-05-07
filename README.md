@@ -9,7 +9,7 @@
 
 [![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/)
 
-This is **fun** a app built for [Jscrambler](https://blog.jscrambler.com/) tutorial during the time of pandemic. The objective includes:
+This is a **fun** app built for [Jscrambler](https://blog.jscrambler.com/) tutorial during the time of pandemic. The objective includes:
 
 - use [Expo](https://expo.io) SDK `37.x.x`.
 - How to use [Expo font hook](https://github.com/byCedric/use-expo/blob/master/packages/font/docs/use-fonts.md) from [Cedric van Putten's](https://github.com/byCedric) collection of `use-expo` [hooks](https://github.com/byCedric/use-expo).
