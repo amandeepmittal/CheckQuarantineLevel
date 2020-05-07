@@ -5,7 +5,8 @@ import {
   StyleSheet,
   Dimensions,
   TouchableWithoutFeedback,
-  ScrollView
+  ScrollView,
+  TouchableOpacity
 } from 'react-native';
 import { useFonts } from '@use-expo/font';
 import { AppLoading } from 'expo';
@@ -16,6 +17,7 @@ import {
 } from '@expo/vector-icons';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import moment from 'moment';
+import * as WebBrowser from 'expo-web-browser';
 
 const customFont = {
   'Press-Start2p': require('./assets/fonts/PressStart2P-Regular.ttf')
@@ -70,7 +72,9 @@ export default function App() {
       return (
         <>
           <MaterialCommunityIcons name="glass-wine" color="#000" size={54} />
-          <Text style={styles.resultText}>Quarantine Connoisseur</Text>
+          <Text style={styles.resultText}>
+            Quarantine Connoisseur. Welcome to the (literal) dark side!
+          </Text>
         </>
       );
     } else if (days >= 8 && days <= 15) {
@@ -81,7 +85,9 @@ export default function App() {
             color="#000"
             size={54}
           />
-          <Text style={styles.resultText}>What is pants</Text>
+          <Text style={styles.resultText}>
+            Quarantine Proficient. AKA “What is pants?”
+          </Text>
         </>
       );
     } else if (days >= 16 && days <= 22) {
@@ -92,20 +98,29 @@ export default function App() {
             color="#000"
             size={54}
           />
-          <Text style={styles.resultText}>Quarantine Veteran</Text>
+          <Text style={styles.resultText}>
+            Quarantine Veteran. #StayHome became your life motto.
+          </Text>
         </>
       );
     } else if (days >= 23) {
       return (
         <>
           <FontAwesome name="paint-brush" color="#000" size={54} />
-          <Text style={styles.resultText}>The Da Vinci of Staying Inside</Text>
+          <Text style={styles.resultText}>
+            THE ULTIMATE QUARANTINE PRO! You are part of the solution - thank
+            you!
+          </Text>
         </>
       );
     } else
       return (
         <Text style={styles.resultText}>Your level will be shown here.</Text>
       );
+  }
+
+  function openWebBrowser() {
+    WebBrowser.openBrowserAsync('https://jscrambler.com/');
   }
 
   if (!isLoaded) {
@@ -120,7 +135,7 @@ export default function App() {
           alignItems: 'center'
         }}
       >
-        <Text style={styles.title}>{`Are you DaVinci of Isolation?`}</Text>
+        <Text style={styles.title}>{`Are You a Quarantine Pro?`}</Text>
         <TouchableWithoutFeedback onPress={showDatePicker}>
           <View style={styles.pickerContainer}>
             <Fontisto style={styles.icon} name="calendar" size={48} />
@@ -152,11 +167,17 @@ export default function App() {
           </TouchableWithoutFeedback>
         </View>
         <View style={styles.resultContainer}>{renderAchievements()}</View>
-        <Text style={styles.footerText}>
-          Built with{' '}
-          <MaterialCommunityIcons name="heart-circle" color="#000" size={30} />{' '}
-          by JScrambler & @amanhimself
-        </Text>
+        <TouchableOpacity onPress={openWebBrowser}>
+          <Text style={styles.footerText}>
+            {`Built with `}
+            <MaterialCommunityIcons
+              name="heart-circle"
+              color="#000"
+              size={30}
+            />{' '}
+            by Jscrambler & @amanhimself
+          </Text>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );
@@ -266,6 +287,8 @@ const styles = StyleSheet.create({
     // position: 'absolute',
     marginTop: 40,
     padding: 25,
-    lineHeight: 30
+    lineHeight: 30,
+    textDecorationLine: 'underline',
+    textDecorationStyle: 'dotted'
   }
 });
