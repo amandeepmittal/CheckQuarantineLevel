@@ -59,4 +59,4 @@ MIT
 
 ## Built by
 
-- @amanhimself: [Twitter](https://twitter.com/amanhimself) | [Blog](https://amanhimself.dev) | [Subscribe the newsletter on new React Native posts and tutorials here](https://tinyletter.com/amanhimself)
+- @amanhimself: [Twitter](https://twitter.com/amanhimself) | [Blog](https://amanhimself.dev) | [Subscribe the newsletter for new React Native posts and tutorials here](https://tinyletter.com/amanhimself)
