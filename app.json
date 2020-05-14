@@ -3,7 +3,7 @@
     "name": "Quarantine Pro",
     "slug": "quarantinepro",
     "platforms": ["ios", "android", "web"],
-    "version": "1.0.3",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/houseicon.png",
     "splash": {
