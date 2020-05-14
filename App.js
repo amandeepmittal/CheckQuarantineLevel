@@ -41,8 +41,8 @@ export default function App() {
 
   function handleConfirm(date) {
     // console.log('A date has been picked: ', date);
-    setPickedDate(date);
     hideDatePicker();
+    setPickedDate(date);
   }
 
   function daysRemaining() {
